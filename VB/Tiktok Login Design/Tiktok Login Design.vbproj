@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0C2EDF3-1B76-4C99-8FDD-A903D611006F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Tiktok_Login_Design.My.MyApplication</StartupObject>
+    <RootNamespace>Tiktok_Login_Design</RootNamespace>
+    <AssemblyName>Tiktok Login Design</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Tiktok Login Design.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Tiktok Login Design.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8-tiktok-50.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UserControl\LogInWithEmailOrUsername.Designer.vb">
+      <DependentUpon>LogInWithEmailOrUsername.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\LogInWithEmailOrUsername.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\LogInWithPassword.Designer.vb">
+      <DependentUpon>LogInWithPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\LogInWithPassword.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ResetWithPhoneNumber.Designer.vb">
+      <DependentUpon>ResetWithPhoneNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ResetWithPhoneNumber.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControlForgotPassword.Designer.vb">
+      <DependentUpon>UserControlForgotPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControlForgotPassword.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControlLogin.Designer.vb">
+      <DependentUpon>UserControlLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControlLogin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControlSign Up.Designer.vb">
+      <DependentUpon>UserControlSign Up.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControlSign Up.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControlSignUpCreatAcount.Designer.vb">
+      <DependentUpon>UserControlSignUpCreatAcount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControlSignUpCreatAcount.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControlSignUpWithEmailCreatAcount.Designer.vb">
+      <DependentUpon>UserControlSignUpWithEmailCreatAcount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControlSignUpWithEmailCreatAcount.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControlUsephoneEmailUsernameLogin.Designer.vb">
+      <DependentUpon>UserControlUsephoneEmailUsernameLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControlUsephoneEmailUsernameLogin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControlUseQRcodeToLogin.Designer.vb">
+      <DependentUpon>UserControlUseQRcodeToLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControlUseQRcodeToLogin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\LogInWithEmailOrUsername.resx">
+      <DependentUpon>LogInWithEmailOrUsername.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\LogInWithPassword.resx">
+      <DependentUpon>LogInWithPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\ResetWithPhoneNumber.resx">
+      <DependentUpon>ResetWithPhoneNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserControlForgotPassword.resx">
+      <DependentUpon>UserControlForgotPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserControlLogin.resx">
+      <DependentUpon>UserControlLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserControlSign Up.resx">
+      <DependentUpon>UserControlSign Up.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserControlSignUpCreatAcount.resx">
+      <DependentUpon>UserControlSignUpCreatAcount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserControlSignUpWithEmailCreatAcount.resx">
+      <DependentUpon>UserControlSignUpWithEmailCreatAcount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserControlUsephoneEmailUsernameLogin.resx">
+      <DependentUpon>UserControlUsephoneEmailUsernameLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserControlUseQRcodeToLogin.resx">
+      <DependentUpon>UserControlUseQRcodeToLogin.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8-twitter-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8-google-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8-facebook-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8-user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8-qr-code-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\icons8-apple-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\QR Code Image.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8-tiktok-50.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
